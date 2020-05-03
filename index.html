@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" async defer></script>
+    <title>Text to speak</title>
+  </head>
+  <body>
+    <div class="bounce">
+      <p>
+        Type any text bellow and press play or just press play without any text
+        inserted.
+      </p>
+    </div>
+    <section>
+      <textarea id="text"></textarea>
+    </section>
+    <div id="output"></div>
+    <div>
+      <h2>⬇⬇⬇ Press play bellow!!! ⬇⬇⬇</h2>
+      <label for="speed">Speed</label>
+      <input
+        type="number"
+        name="speed"
+        id="speed"
+        min=".2"
+        max="5"
+        step=".2"
+        value="1"
+      />
+      <label for="repeat">Repeat?</label>
+      <input type="number" name="repeat" id="repeat" value="1" />
+      <button id="play-button">Play</button>
+      <button id="pause-button">Pause</button>
+      <button id="stop-button">Stop</button>
+      <button id="reset" type="reset">Reset</button>
+    </div>
+  </body>
+</html>
